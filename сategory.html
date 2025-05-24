@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Категория</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .sidebar {
+            background-color: #333;
+            color: white;
+            height: 100vh;
+            position: fixed;
+            padding-top: 20px;
+            width: 25%; /* 1/4 экрана */
+        }
+        .sidebar-menu {
+            border-bottom: 1px solid #555;
+            padding-bottom: 15px;
+            margin-bottom: 15px;
+        }
+        .main-content {
+            margin-left: 25%; /* Отступ под сайдбар */
+            padding: 20px;
+            width: 75%; /* 3/4 экрана */
+        }
+        .product-card {
+            height: 250px;
+            margin-bottom: 30px;
+            border: 1px solid #dee2e6;
+            border-radius: 5px;
+            display: flex;
+            flex-direction: column;
+        }
+        .product-name {
+            padding: 15px;
+            text-align: center;
+            font-weight: bold;
+            background-color: #f8f9fa;
+        }
+        .product-price {
+            flex-grow: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        .product-button {
+            padding: 15px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Левая часть - сайдбар -->
+            <div class="sidebar">
+                <h2 class="sidebar-menu">Меню</h2>
+                <div class="d-flex flex-column gap-2">
+                    <a href="#" class="btn btn-dark">Главная</a>
+                    <a href="#" class="btn btn-dark">Категории</a>
+                    <a href="#" class="btn btn-dark">Заказы</a>
+                    <a href="#" class="btn btn-dark">Контакты</a>
+                </div>
+            </div>
+
+            <!-- Основная часть контента -->
+            <div class="main-content">
+                <h1 class="text-center mb-5">Категория 1</h1>
+
+                <!-- Первый ряд товаров -->
+                <div class="row">
+                    <!-- Товар 1 -->
+                    <div class="col-md-4">
+                        <div class="product-card">
+                            <div class="product-name">Товар 1</div>
+                            <div class="product-price">$100</div>
+                            <div class="product-button">
+                                <button class="btn btn-primary">Купить</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Товар 2 -->
+                    <div class="col-md-4">
+                        <div class="product-card">
+                            <div class="product-name">Товар 2</div>
+                            <div class="product-price">$150</div>
+                            <div class="product-button">
+                                <button class="btn btn-primary">Купить</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Товар 3 -->
+                    <div class="col-md-4">
+                        <div class="product-card">
+                            <div class="product-name">Товар 3</div>
+                            <div class="product-price">$200</div>
+                            <div class="product-button">
+                                <button class="btn btn-primary">Купить</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Второй ряд товаров -->
+                <div class="row">
+                    <!-- Товар 4 -->
+                    <div class="col-md-4">
+                        <div class="product-card">
+                            <div class="product-name">Товар 4</div>
+                            <div class="product-price">$120</div>
+                            <div class="product-button">
+                                <button class="btn btn-primary">Купить</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Товар 5 -->
+                    <div class="col-md-4">
+                        <div class="product-card">
+                            <div class="product-name">Товар 5</div>
+                            <div class="product-price">$180</div>
+                            <div class="product-button">
+                                <button class="btn btn-primary">Купить</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Товар 6 -->
+                    <div class="col-md-4">
+                        <div class="product-card">
+                            <div class="product-name">Товар 6</div>
+                            <div class="product-price">$220</div>
+                            <div class="product-button">
+                                <button class="btn btn-primary">Купить</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
